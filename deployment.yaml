@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: srujan-portfolio
+  labels:
+    app: srujan-portfolio
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: srujan-portfolio
+  template:
+    metadata:
+      labels:
+        app: srujan-portfolio
+    spec:
+      containers:
+      - name: srujan-portfolio
+        image: srujanpanthula/srujan-portfolio:v1.10
+        ports:
+        - containerPort: 3000
+
