@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: srujan-portfolio
-        image: srujanpanthula/srujan-portfolio
+        image: srujanpanthula/srujan-portfolio:v1
         ports:
         - containerPort: 3000
 
